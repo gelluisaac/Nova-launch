@@ -1308,6 +1308,7 @@ mod fuzz_test;
 
 #[cfg(test)]
 mod integration_test;
+
 mod gas_benchmark_comprehensive;
 
 #[cfg(test)]
