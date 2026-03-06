@@ -307,7 +307,7 @@ pub struct PaginationCursor {
 /// # Fields
 /// * `tokens` - Vector of token info for this page
 /// * `cursor` - Cursor for next page (None = no more results)
-#[contracttype]
+// NOTE: Cannot be #[contracttype] because Option<PaginationCursor> is not serializable
 #[derive(Clone, Debug, Eq, PartialEq)]
 pub struct PaginatedTokens {
     pub tokens: soroban_sdk::Vec<TokenInfo>,

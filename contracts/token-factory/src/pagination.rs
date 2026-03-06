@@ -297,7 +297,6 @@ mod tests {
         let creator1 = Address::generate(&env);
         let creator2 = Address::generate(&env);
         
-        // Create tokens for creator1
         for i in 0..10 {
             let token_info = TokenInfo {
                 address: Address::generate(&env),
